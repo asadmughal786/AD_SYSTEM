@@ -1,0 +1,149 @@
+2023-12-13 19:53:25,825 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 19:55:01,590 ads.cron     INFO     Ad blocked updated successfully
+2023-12-13 19:55:01,590 ads.cron     INFO     Visitor counts reset successfully
+2023-12-13 19:55:01,590 ads.cron     INFO     Cron job executed successfully
+2023-12-13 19:56:36,550 django.request WARNING  Not Found: /aadmin
+2023-12-13 20:00:02,013 ads.cron     INFO     Ad blocked updated successfully
+2023-12-13 20:00:02,024 ads.cron     INFO     Visitor counts reset successfully
+2023-12-13 20:00:02,024 ads.cron     INFO     Cron job executed successfully
+2023-12-13 20:04:03,666 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:04:04,061 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:04:21,102 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:04:21,542 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:05:01,494 ads.cron     INFO     Ad blocked updated successfully
+2023-12-13 20:05:01,504 ads.cron     INFO     Visitor counts reset successfully
+2023-12-13 20:05:01,504 ads.cron     INFO     Cron job executed successfully
+2023-12-13 20:05:07,693 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:05:08,122 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:05:28,256 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:05:28,799 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:05:30,073 django.request ERROR    Internal Server Error: /daily-visitor-count/
+Traceback (most recent call last):
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py", line 220, in get
+    print(queryset)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 374, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 758, in as_sql
+    distinct_fields, distinct_params = self.get_distinct()
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1013, in get_distinct
+    _, targets, alias, joins, path, _, transform_function = self._setup_joins(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1100, in _setup_joins
+    field, targets, opts, joins, path, transform_function = self.query.setup_joins(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1854, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'ad_id' into field. Choices are: advertisement, advertisement_id, id, location, location_id, today_date, visitor_count
+2023-12-13 20:05:49,073 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:05:49,575 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:05:53,480 django.request ERROR    Internal Server Error: /daily-visitor-count/
+Traceback (most recent call last):
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py", line 220, in get
+    print(queryset)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 374, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 785, in as_sql
+    distinct_result, distinct_params = self.connection.ops.distinct_sql(
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/db/backends/base/operations.py", line 205, in distinct_sql
+    raise NotSupportedError(
+django.db.utils.NotSupportedError: DISTINCT ON fields is not supported by this database backend
+2023-12-13 20:07:03,889 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:07:04,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:07:09,706 django.request ERROR    Internal Server Error: /daily-visitor-count/
+Traceback (most recent call last):
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py", line 225, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/serializers.py", line 59, in to_representation
+    'today_date': instance.today_date,
+AttributeError: 'dict' object has no attribute 'today_date'
+2023-12-13 20:07:23,559 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:07:23,913 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:07:43,097 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:07:43,520 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:09:12,093 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/serializers.py changed, reloading.
+2023-12-13 20:09:12,454 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:09:31,648 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/AD_SYSTEM/settings.py changed, reloading.
+2023-12-13 20:09:32,023 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:09:35,430 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/AD_SYSTEM/settings.py changed, reloading.
+2023-12-13 20:09:35,910 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:10:13,872 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:11:04,333 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:11:04,685 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:11:18,557 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/views.py changed, reloading.
+2023-12-13 20:11:18,965 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:11:27,590 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/serializers.py changed, reloading.
+2023-12-13 20:11:28,038 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-12-13 20:11:47,160 django.utils.autoreload INFO     /home/asad/Code_Learnings/vs_code/Django_Projects/Personal_Projects/AD_SYSTEM/ads/models.py changed, reloading.
+2023-12-13 20:11:47,641 django.utils.autoreload INFO     Watching for file changes with StatReloader
